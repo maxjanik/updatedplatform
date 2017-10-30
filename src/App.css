@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Roboto Condensed', sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Roboto+Condensed')
+}
+
+p {
+font-size: 39px;
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+.App {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Brady {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+
+
+
+.home {
+  margin: 25px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.headername {
+  font-size: 32px;
+  background-color: #fff;
+  color: #000;}
+
+.homepic image{
+  position: relative;
+}
+
+.Homepic h1{
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  font-size: 100px;
+  color: white;
+  top:
+}
+
+.left-section {
+  width: 810px;
+  align: left;
+}
+
+.right-section {
+  width: 340px;
+  float: right;
+}
+
+ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  color: #000000;}
+
+.main-container{
+  background-color: #edeef0;
+  margin-left: 150px;
+  margin-right: 150px;}
+
+.pic2 {
+  margin-left: 50px;
+
+}
