@@ -12,7 +12,8 @@ class Roster extends React.Component {
         slug: 'Dog',
         title: 'title',
         link: 'Cat',
-        author: 'y'}  }
+        author: 'y',
+        date: 'date'}  }
 
   fetchProfile(id) {
 
@@ -26,6 +27,7 @@ class Roster extends React.Component {
             title: data.title,
             link: data.link,
             author: data.author,
+            date: data.date
 
           })
         })
@@ -35,6 +37,7 @@ class Roster extends React.Component {
       this.fetchProfile(this.state.link);
       this.fetchProfile(this.state.slug);
       this.fetchProfile(this.state.author);
+      this.fetchProfile(this.state.date);
     }
     render() {
       return (
@@ -42,7 +45,8 @@ class Roster extends React.Component {
         <ul>
 <li>{this.state.link}</li>
 <li>{this.state.slug}</li>
-<li>{this.state.author}</li>
+<li>{this.state.title}</li>
+<li>{this.state.date}</li>
 </ul>
 </div>
       )

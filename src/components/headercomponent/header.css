@@ -3,21 +3,23 @@
   src: url('https://fonts.googleapis.com/css?family=Playfair+Display:700')}
 
 .headermenu{
-  position: absolute;
-  color: white;}
+  color: white;
+  background-color: #000033;
+  padding: 0px;
+  margin: 0px;}
 
-.headermenu ul li h1{
-  color: #fff;
-  font-family: 'Playfair Display', serif;
-  font-weight: 800;
-  font-size: 45px;}
-
-.headermenu ul li{
-  color: #fff;
+.headermenu ul li a{
+  color: white;
   font-size: 16px;
   text-transform: uppercase;;
   font-family: 'Playfair Display', serif;
-  font-weight: 800;}
+  font-weight: 800;
+}
+
+.headermenu ul{
+  padding: 0px;
+  margin: 0px;
+}
 
 .logo {
  display: block;

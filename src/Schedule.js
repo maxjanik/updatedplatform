@@ -2,34 +2,40 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
-const API = 'http://www.elludo.com/wp-json/wp/v2/posts';
+const API = 'http://sportsjournal.herokuapp.com/posts';
 class Schedule extends React.Component {
 
   constructor(props) {
       super(props)
       this.state = {
         id: '',
-        slug: '',
+        content: '',
         title: '',
-        link: '',
-        author: ''}  }
+        sport: '',
+        user_id: '',
+        score: '',
+        writer: '',
+        date: '',
+      }  }
 
   fetchProfile(id) {
 
-      let url = `${API}/${id}`;
+      let url = `${API}/1`;
       fetch(url)
         .then((res) => res.json() )
         .then((data) => {
           this.setState({
-            id: data.id,
-            slug: data.slug,
-            title: data.title,
-            link: data.link,
-            author: data.author,
+            id: data.post.id,
+            content: data.post.content,
+            title: data.post.title,
+            sport: data.post.sport,
+            score: data.post.score,
+            writer: data.post.writer,
+            date: data.post.created_at,
 
           })
         })
-        .catch((error) => console.log('Oops! . There Is A Problem') )
+        .catch((error) => alert(error) )
     }
     componentDidMount() {
       this.fetchProfile(this.state.id);
@@ -37,11 +43,20 @@ class Schedule extends React.Component {
     }
     render() {
       return (
-        <div>
-        <ul>
-<li>{this.state.slug}</li>
-</ul>
-</div>
+        <div className="post">
+            <div className="title">
+              {this.state.title}
+            </div>
+            <div className="meta">
+              by:&nbsp;{this.state.writer}&nbsp;&nbsp;on:&nbsp;&nbsp;{this.state.date}
+            </div>
+            <div className="category">
+              Sorted under: {this.state.sport}
+            </div>
+            <div className="content">
+            {this.state.content}
+            </div>
+        </div>
       )
     }
   }
