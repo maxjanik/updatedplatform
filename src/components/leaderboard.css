@@ -1,19 +1,24 @@
 .Board {
-  font-size: 30px;
+  font-size: 25px;
   align: left;
   width: 300px;
-  background-color: rgb(255, 255, 128);
-}
+  background-color: #cce6ff;}
 
 .R1 {
-  background-color: blue;
-}
+  background-color: #e6f3ff;
+  margin: 3px;
+  padding-left: 20px;}
+
+.R2 {
+  background-color: #ffffff;
+  margin: 3px;
+  padding-left: 50px;}
 
 .AboutUs {
   height: 400px;
   font-family: 'Roboto Condensed', sans-serif;
-  background: url(fenway.png);
-}
+  background: url(fenway.png);}
+
 .AboutUs-left {
   width: 350px;
   float: left;
@@ -22,9 +27,7 @@
   margin-left: 150px;
   margin-right: 40px;
   margin-top: 50px;
-  margin-bottom: 50px;
-
-}
+  margin-bottom: 50px;}
 
 .AboutUs-center {
   width: 350px;
@@ -34,8 +37,7 @@
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 50px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px;}
 
 .AboutUs-right {
   width: 350px;
@@ -45,8 +47,7 @@
   margin-left: 40px;
   margin-right: 150px;
   margin-top: 50px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px;}
 
 .Slogan {
   margin-top: 55px;
@@ -58,20 +59,16 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 55px;
-
-}
+  padding-bottom: 55px;}
 
 .AboutUs h3{
   font-size: 32px;
   color: white;
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-}
+  font-weight: 700;}
 
 .AboutUs p{
   margin: 10px;
   font-size: 18px;
-  color: white;
-}
+  color: white;}

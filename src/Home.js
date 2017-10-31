@@ -4,6 +4,8 @@ import Footer from './components/footercomponent/footer';
 import pic4 from './Assets/background2.png';
 import AboutUs from './components/Aboutus.js';
 import axios from 'axios';
+import SignIn from './components/SignIn';
+import { Link } from 'react-router-dom';
 
 
 class Home extends Component {
@@ -14,6 +16,7 @@ class Home extends Component {
 
     <div className="Homepic">
       <img src={pic4} className="BigHouse" alt="pic4" width="100%"/>
+      <p className="entry">Enter Site >> </p>
     </div>
 
     <AboutUs />
@@ -24,6 +27,7 @@ class Home extends Component {
       <input type="submit" value="Submit" />
     </form>
 
+    <Link to='/SignIn'>SignIn</Link>
 
     <Footer />
 </div>

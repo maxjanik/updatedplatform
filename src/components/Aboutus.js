@@ -19,7 +19,7 @@ class Aboutus extends Component {
       <h3>What We Do</h3>
     </div>
     <div className="AboutUs-right">
-      <h3>Contact Us</h3>
+      <h3>Features</h3>
     </div>
   </div>
 </div>
